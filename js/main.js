@@ -16,7 +16,7 @@ $(document).ready(function () {
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
     }
   })
-
+/*
   if (window.location.hash && window.location.hash == '#about') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
@@ -34,5 +34,5 @@ $(document).ready(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
-
+*/
 })
