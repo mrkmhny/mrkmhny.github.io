@@ -11,14 +11,23 @@ $(document).ready(function () {
     if (currentWidth < 960) {
       $('.panel-cover').addClass('panel-cover--collapsed')
       $('.content-wrapper').addClass('animated slideInRight')
+      $('body').css('overflow-y', 'visible')
     } else {
       $('.panel-cover').css('max-width', currentWidth)
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
+      $('body').css('overflow-y', 'visible')
     }
   })
 
   if (window.location.hash && window.location.hash == '#about') {
     $('.panel-cover').addClass('panel-cover--collapsed')
+    $('body').css('overflow-y', 'visible')
+  }
+
+  // Prevent scrolling until panel-cover is collapsed
+  if ($('.panel-cover').is('.panel-cover--collapsed')) {
+    console.log('panel-cover is collapsed')
+    $('.content-wrapper').attr('overflow','scroll')
   }
 /*
   if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {

@@ -51,6 +51,13 @@ pre.highlight code,
     margin: 0 20px 10px;
 }
 
+// Edits below
+
+body {
+  //overflow-y: hidden;
+  //height:10%;
+}
+
 .user-image {
   margin-bottom: 1.2em;
   position: relative;
@@ -137,7 +144,6 @@ pre.highlight code,
     .lantea-logo {
       width:35px;
       height:35px;
-      margin-right: 5px;
     }
   }
 }
