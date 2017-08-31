@@ -1,0 +1,154 @@
+---
+---
+@import "uno";
+@import "tables";
+@import "monokai";
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Modifications */
+
+pre.highlight,
+.highlight pre {
+  padding: 10px;
+}
+
+pre.highlight code,
+.highlight pre code {
+  white-space: pre-wrap;
+}
+
+.btn,
+.navigation__item a {
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+.pagination__page-number {
+  display: inline-block;
+  padding: 10px;
+}
+
+.categories a,
+.tags a {
+  border: 1px solid #e25440;
+  border-radius: 20px;
+  color: #e25440;
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+.post-meta__tags {
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.footer__copyright {
+    margin: 0 20px 10px;
+}
+
+.user-image {
+  margin-bottom: 1.2em;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius:100%;
+  animation: backgroundChange 50s infinite;
+}
+
+@keyframes backgroundChange {
+  0%   {background: rgba(102,152,204,.7);}
+  20%  {background: rgba(102,204,152,.7);}
+  40%  {background: rgba(152,204,102,.7);}
+  60%  {background: rgba(204,152,102,.7);}
+  80%  {background: rgba(152,102,204,.7);}
+  100% {background: rgba(102,152,204,.7);}
+}
+
+.panel-cover__title {
+  letter-spacing: 0px;
+  color:white;
+  font-family:"Anton";
+  text-transform: uppercase;
+  animation: shadowChange 50s infinite;
+}
+
+@keyframes shadowChange {
+  0%   {text-shadow:2px 3px 0px rgba(102,152,204,.7);}
+  20%  {text-shadow:2px 3px 0px rgba(102,204,152,.7);}
+  40%  {text-shadow:2px 3px 0px rgba(152,204,102,.7);}
+  60%  {text-shadow:2px 3px 0px rgba(204,152,102,.7);}
+  80%  {text-shadow:2px 3px 0px rgba(152,102,204,.7);}
+  100% {text-shadow:2px 3px 0px rgba(102,152,204,.7);}
+}
+
+.section {
+  h1 {
+    margin-bottom: 10px;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+.divider {
+  display: block;
+  width: 30%;
+  margin: 2em 0;
+  border-top: 1px solid #dddddd;
+}
+
+.section-title {
+  font-family: "Anton";
+  letter-spacing: 0px;
+}
+
+.about-section {
+  overflow:auto;
+  margin-bottom: 20px;
+  .headshot {
+    width: 30%;
+    float:left;
+    margin-right: 10px;
+    border-radius:12px;
+  }
+  p:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.about-section .about-text:after {
+  clear:left;
+}
+
+.freelance-section {
+  .company-name {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: center;
+    h2 {
+      margin-bottom: 0px;
+    }
+    .lantea-logo {
+      width:35px;
+      height:35px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.projects-section {
+  margin-bottom: 25px;
+  .project-title i {
+    margin-right: 5px;
+  }
+  .project-links {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}

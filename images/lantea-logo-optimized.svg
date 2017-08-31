@@ -1,0 +1,23 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="11.295mm" width="11.295mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+
+  <filter id="b" height="31" width="34" y="11" x="2" filterUnits="userSpaceOnUse">
+   <feOffset dy="3" dx="0" in="SourceAlpha"/>
+   <feGaussianBlur stdDeviation="2.646" result="blurOut"/>
+   <feFlood flood-color="rgb(0, 0, 0)" result="floodOut"/>
+   <feComposite operator="atop" in2="blurOut" in="floodOut"/>
+   <feComponentTransfer>
+    <feFuncA slope="0.35" type="linear"/>
+   </feComponentTransfer>
+   <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+ </defs>
+ <path fill-rule="evenodd" fill="#c4365c" d="m0.87813 17.902 16.992-17.019c1.173-1.175 3.076-1.177 4.251-0.004l17.019 16.991c1.175 1.173 1.176 3.077 0.004 4.252l-16.992 17.019c-1.173 1.175-3.076 1.177-4.251 0.004l-17.019-16.992c-1.175-1.173-1.176-3.076-0.004-4.251z"/>
+ <path fill="url(#a)" d="m0.87813 17.902 16.992-17.019c1.173-1.175 3.076-1.177 4.251-0.004l17.019 16.991c1.175 1.173 1.176 3.077 0.004 4.252l-16.992 17.019c-1.173 1.175-3.076 1.177-4.251 0.004l-17.019-16.992c-1.175-1.173-1.176-3.076-0.004-4.251z"/>
+ <g filter="url(#b)" transform="translate(.023126 .023501)">
+  <path fill-rule="evenodd" fill="#fff" d="m27.985 23.591-7.797 7.7c-0.058 0.059-0.154 0.058-0.212 0l-1.911-1.916c-0.008-0.008 0.005-0.018 0-0.027l-9.681-9.706c-0.134-0.136-0.16-0.328-0.057-0.43l2.119-2.093c0.103-0.102 0.296-0.075 0.431 0.061l9.588 9.613 5.397-5.331c0.059-0.058 0.155-0.058 0.213 0.001l1.911 1.916c0.059 0.059 0.058 0.154-0.001 0.212z"/>
+ </g>
+</svg>
