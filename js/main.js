@@ -11,17 +11,17 @@ $(document).ready(function () {
     if (currentWidth < 960) {
       $('.panel-cover').addClass('panel-cover--collapsed')
       $('.content-wrapper').addClass('animated slideInRight')
-      $('body').css('overflow-y', 'visible')
+      $('.content-wrapper').removeClass('content-wrapper__hidden')
     } else {
       $('.panel-cover').css('max-width', currentWidth)
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
-      $('body').css('overflow-y', 'visible')
+      $('.content-wrapper').removeClass('content-wrapper__hidden')
     }
   })
 
   if (window.location.hash && window.location.hash == '#about') {
     $('.panel-cover').addClass('panel-cover--collapsed')
-    $('body').css('overflow-y', 'visible')
+    $('.content-wrapper').removeClass('content-wrapper__hidden')
   }
 
   // Prevent scrolling until panel-cover is collapsed
