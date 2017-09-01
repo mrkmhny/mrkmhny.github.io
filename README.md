@@ -12,7 +12,7 @@ Access via: [http://localhost:4000/](http://localhost:4000/)
 
 ---
 
-### Demo and Download
+### View Live
 
 [Live Version](http://mrkmhny.github.io)
 
